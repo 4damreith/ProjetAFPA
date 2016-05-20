@@ -5,7 +5,8 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/root">
+        android:id="@+id/root"
+        >
 
     <TextView android:layout_width="match_parent"
               android:layout_height="0dp"
@@ -14,7 +15,8 @@
               android:id="@+id/titreFormCategorie"
               android:text="@string/titre_form_creer_categorie"
               android:gravity="center"
-              android:background="@color/secondary_text_disabled_material_light"
+              android:textColor="@color/primary_text_default_material_dark"
+              android:background="@color/material_blue_grey_800"
             />
 
     <ListView android:layout_width="match_parent"
@@ -30,11 +32,14 @@
             android:layout_weight="1"
             android:id="@+id/boutonAjouterChamp"
             android:text="@string/texte_bouton_form_ajouter_champ"
+            android:background="@color/button_material_light"
+            android:layout_marginBottom="@dimen/form_buttons_margin"
             />
     <Button android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:id="@+id/boutonValiderCategorie"
+            android:background="@color/button_material_light"
             android:text="@string/texte_bouton_form_valider"
             />
 

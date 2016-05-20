@@ -8,4 +8,5 @@
 
     <!--Formulaires-->
     <dimen name="form_titles">20sp</dimen>
+    <dimen name="form_buttons_margin">10dp</dimen>
 </resources>

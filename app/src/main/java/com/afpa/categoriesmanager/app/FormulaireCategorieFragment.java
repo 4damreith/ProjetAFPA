@@ -22,19 +22,17 @@ import java.util.ArrayList;
 public class FormulaireCategorieFragment extends Fragment implements View.OnClickListener {
 
 
-    private static AlertDialog.Builder builderDialogAjouterChamp;
-    private Button boutonAjouterChamp;
-    private Button boutonValiderCategorie;
+    private static AlertDialog dialogAjouterChamp;
     private FormulaireCategorieListener listener;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.formlaire_categorie_fragment, container, false);
-        this.boutonAjouterChamp = (Button) view.findViewById(R.id.boutonAjouterChamp);
-        this.boutonValiderCategorie = (Button) view.findViewById(R.id.boutonValiderCategorie);
-        this.boutonAjouterChamp.setOnClickListener(this);
-        this.boutonValiderCategorie.setOnClickListener(this);
+        View view = inflater.inflate(R.layout.formulaire_categorie_fragment, container, false);
+        Button boutonAjouterChamp = (Button) view.findViewById(R.id.boutonAjouterChamp);
+        Button boutonValiderCategorie = (Button) view.findViewById(R.id.boutonValiderCategorie);
+        boutonAjouterChamp.setOnClickListener(this);
+        boutonValiderCategorie.setOnClickListener(this);
         return view;
     }
 
@@ -45,9 +43,13 @@ public class FormulaireCategorieFragment extends Fragment implements View.OnClic
         } else {
             throw new ClassCastException("L'activite conteneur doit implementer l'interface FormulaireCategorieFragment.FormulaireCategorieListener");
         }
+        initDialogAjouterChamp(context);
+        super.onAttach(context);
+    }
+
+    private void initDialogAjouterChamp(Context context) {
         ChampDAO champDAO = new ChampDAO(context);
         JSONObject jsonObject = champDAO.readAll(null);
-
         LayoutInflater inflater = getActivity().getLayoutInflater();
         View layoutAjouterChamp = inflater.inflate(R.layout.dialog_ajout_champ, null);
         Spinner spinner = (Spinner) layoutAjouterChamp.findViewById(R.id.spinnerAjoutChamp);
@@ -57,9 +59,7 @@ public class FormulaireCategorieFragment extends Fragment implements View.OnClic
                 JsonUtils.getKeysAsList(jsonObject, new ArrayList<String>())
         );
         spinner.setAdapter(spinnerChampsAdapter);
-        builderDialogAjouterChamp = new AlertDialog.Builder(context);
-        builderDialogAjouterChamp
-                .setCancelable(false)
+        dialogAjouterChamp = new AlertDialog.Builder(context).setCancelable(false)
                 .setView(layoutAjouterChamp)
                 .setMessage(getResources().getString(R.string.titre_dialog_ajouter_champ))
                 .setPositiveButton(
@@ -67,7 +67,7 @@ public class FormulaireCategorieFragment extends Fragment implements View.OnClic
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-
+                                dialog.dismiss();
                             }
                         })
                 .setNegativeButton(
@@ -75,10 +75,10 @@ public class FormulaireCategorieFragment extends Fragment implements View.OnClic
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-
+                                dialog.cancel();
                             }
-                        });
-        super.onAttach(context);
+                        })
+                .create();
     }
 
     @Override
@@ -94,7 +94,7 @@ public class FormulaireCategorieFragment extends Fragment implements View.OnClic
     }
 
     private void triggerAjouterChamp() {
-        builderDialogAjouterChamp.show();
+        dialogAjouterChamp.show();
     }
 
     private void triggerValiderCategorie() {
@@ -102,8 +102,6 @@ public class FormulaireCategorieFragment extends Fragment implements View.OnClic
     }
 
     public interface FormulaireCategorieListener {
-
-        public void fireValidCategorie();
-
+        void fireValidCategorie();
     }
 }
