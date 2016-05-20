@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\sjebrane\Documents\AndroidProjects\CategoriesManager\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha2\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="32ab8bede8cd600f25a5bb3fe15068c81c8910dc">
+        <dex dex="C:\Users\sjebrane\Documents\AndroidProjects\CategoriesManager\app\build\intermediates\pre-dexed\debug\classes-e489c3a63ef2a1f8ec8894d20b2860d1265ad16e.jar" />
+    </item>
+    <item
+        jar="C:\Users\sjebrane\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.2\f1bc476cc167b18e66c297df599b2377131a8947\gson-2.6.2.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="C:\Users\sjebrane\Documents\AndroidProjects\CategoriesManager\app\build\intermediates\pre-dexed\debug\gson-2.6.2-06550701dd69d1a326e5020f5cdd22a370ba0243.jar" />
+    </item>
+    <item
+        jar="C:\Users\sjebrane\Documents\AndroidProjects\CategoriesManager\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0-alpha2\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="661a632c3b434991d6364690cbe0f786371101cc">
+        <dex dex="C:\Users\sjebrane\Documents\AndroidProjects\CategoriesManager\app\build\intermediates\pre-dexed\debug\classes-962bb7fbbb266559600d1607858550b21c7fc883.jar" />
+    </item>
+    <item
+        jar="C:\Users\sjebrane\Documents\AndroidProjects\CategoriesManager\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0-alpha2\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="bf5aa3b026d5b5fd9f4ab5e8cf13499b9e016dfb">
+        <dex dex="C:\Users\sjebrane\Documents\AndroidProjects\CategoriesManager\app\build\intermediates\pre-dexed\debug\classes-29f7b1c88a97e51a4a2117beed4265dff05d84eb.jar" />
+    </item>
+    <item
+        jar="C:\Users\sjebrane\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.1\2287494d4f5f9f3a9a2bb6980e3f32053721b315\core-3.2.1.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="2287494d4f5f9f3a9a2bb6980e3f32053721b315">
+        <dex dex="C:\Users\sjebrane\Documents\AndroidProjects\CategoriesManager\app\build\intermediates\pre-dexed\debug\core-3.2.1-558825e53d5c264b537e573c985c99fe302c7a6e.jar" />
+    </item>
+    <item
+        jar="C:\Users\sjebrane\Documents\AndroidProjects\CategoriesManager\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0-alpha2\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="df7f6513d6e2aaa302bbac654807c6129b517090">
+        <dex dex="C:\Users\sjebrane\Documents\AndroidProjects\CategoriesManager\app\build\intermediates\pre-dexed\debug\classes-a2e7f509721eb01cd61af603cafcd41b3c8666e8.jar" />
+    </item>
+    <item
+        jar="C:\Users\sjebrane\Documents\AndroidProjects\CategoriesManager\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha2\libs\internal_impl-24.0.0-alpha2.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="e460bc069dfd21d22770cf2a2370c9021b9c98a2">
+        <dex dex="C:\Users\sjebrane\Documents\AndroidProjects\CategoriesManager\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0-alpha2-d4cc0a7b5179c6fe8d7a41b425500b46a88ec4d3.jar" />
+    </item>
+    <item
+        jar="C:\Users\sjebrane\AppData\Local\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0-alpha2\support-annotations-24.0.0-alpha2.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="8071e1e6cd07e9253720313d6c14286a7ee424e0">
+        <dex dex="C:\Users\sjebrane\Documents\AndroidProjects\CategoriesManager\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0-alpha2-5d7a54390143f62aaaf25960a6794fd25b46b1d0.jar" />
+    </item>
+
+</items>
