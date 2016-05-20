@@ -1,17 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-        >
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/root">
 
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/root">
 
-    </LinearLayout>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:textSize="@dimen/form_titles"
+              android:id="@+id/titreFormCategorie"
+              android:text="@string/titre_form_creer_categorie"
+              android:gravity="center"
+              android:background="@color/secondary_text_disabled_material_light"
+            />
 
+    <ListView android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="9"
+              android:id="@+id/listViewChamps"
+            >
 
-</ScrollView>
+    </ListView>
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/boutonAjouterChamp"
+            android:text="@string/texte_bouton_form_ajouter_champ"
+            />
+    <Button android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/boutonValiderCategorie"
+            android:text="@string/texte_bouton_form_valider"
+            />
+
+</LinearLayout>

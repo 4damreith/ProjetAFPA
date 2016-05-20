@@ -1,6 +1,19 @@
 <resources>
+    <!--GENERAL-->
     <string name="app_name">CategoriesManager</string>
+    <string name="action_settings">Menu</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <!--FORMULAIRES-->
+
+    <!--Titres-->
+    <string name="titre_form_creer_categorie">Créer une catégorie</string>
+    <string name="titre_form_editer_categorie">Editer une catégorie</string>
+    <string name="titre_dialog_ajouter_champ">Sélectionner le type de champ à ajouter</string>
+
+    <!--Boutons-->
+    <string name="texte_bouton_form_ajouter_champ">Ajouter un champ</string>
+    <string name="texte_bouton_form_valider">Créer catégorie</string>
+    <string name="texte_bouton_dialog_ajouter_champ_valider">Valider</string>
+    <string name="texte_bouton_dialog_ajouter_champ_annuler">Annuler</string>
+
 </resources>
